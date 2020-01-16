@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+         xmlns:android="http://schemas.android.com/apk/res/android"
+         xmlns:app="http://schemas.android.com/apk/res-auto"
+         xmlns:tools="http://schemas.android.com/tools"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         tools:context=".MainActivity" android:visibility="visible">
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello World !"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" android:id="@+id/textView" android:visibility="visible"
+            tools:visibility="visible" android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="36sp" android:fontFamily="monospace" android:textColor="#F7002877"
+            android:textAllCaps="false" android:accessibilityLiveRegion="none" android:background="#00E91B1B"
+            app:layout_constraintVertical_bias="0.717" android:layout_marginTop="8dp"
+    />
+    <ImageView android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/yveskalume"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintHorizontal_bias="0.0" app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintBottom_toBottomOf="parent"
+               android:contentDescription="@string/moi"
+               android:id="@+id/imageView" android:paddingLeft="40dp" android:paddingTop="10dp"
+               android:paddingRight="40dp" android:background="#00E04B4B"
+               android:layout_marginBottom="100dp"/>
+    <EditText android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:paddingTop="10dp"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+              app:layout_constraintHorizontal_bias="0.0"
+              android:id="@+id/formulaire" android:textSize="24sp"
+              android:inputType="textPersonName|text"
+              android:hint="Votre Prenom" android:layout_marginBottom="8dp" app:layout_constraintTop_toTopOf="parent"
+              app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.848"/>
+    <Button android:id="@+id/btnSaluer"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="76dp"
+            app:layout_constraintTop_toTopOf="@+id/formulaire" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"
+            android:text="Saluer"
+            app:layout_constraintHorizontal_bias="0.498" app:layout_constraintVertical_bias="0.333"/>
+
+</android.support.constraint.ConstraintLayout>
