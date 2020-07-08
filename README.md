@@ -1,2 +1,2 @@
 # myhelloworld
-my first android app. just an hello world in kotlib
+my first android app. just an hello world in Kotlin
